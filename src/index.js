@@ -70,14 +70,14 @@ function clearGalleryContainer() {
 
 function noResults() {
   error({
-    text: 'Пожалуйста введите данные для поиска!',
+    text: 'Please enter the search data!',
     delay: 2000,
   });
 }
 
 function noMatchesFound() {
   error({
-    text: 'Нет совпадений, пожалуйста сделайте корректный запрос!',
+    text: 'No matches, please make a valid request!',
     delay: 2500,
   });
 }
