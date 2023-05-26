@@ -9,6 +9,15 @@ import ImageApiService from './js/apiService';
 import { onGalleryElClick } from './js/modal';
 import LoadMoreBtn from './js/load-more-btn';
 
+const themeToggle = document.querySelector('#theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('change', toggleTheme);
+
+function toggleTheme() {
+  body.classList.toggle('dark-theme');
+}
+
 const refs = {
   searchForm: document.querySelector('#search-form'),
   gallery: document.querySelector('.gallery'),
@@ -97,3 +106,4 @@ function scrollPage() {
     console.log(error);
   }
 }
+
